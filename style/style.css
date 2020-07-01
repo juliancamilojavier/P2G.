@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	background-image: url("../img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;  
+}
+section{
+	width: 95%;
+	background-color: rgb(32, 48, 64, 0.8); 
+	margin: 2em;
+	position: absolute;
+	padding: 2em;
+	padding-left: 5.5em;	
+}
+h1{
+	padding: 0.3em 0.3em 0.3em 0;
+}
+#logo{
+    width: 40%;
+}
+.producto{
+	width: 20%;
+	height: 400px;
+	position: relative;
+	float: left;
+	background-color: #24303c;
+	box-shadow: 7px 13px 37px #000;
+	padding: 20px;
+	margin: 1.5em;
+	color: white;
+	font-family: 'calibri';
+}
+#img_titulo{
+	width: 100%;
+}
+#boton{
+	position: relative;
+	width: 8%;
+	padding: .5em;
+	background-color: #0B4C63;
+	border: none;
+	margin-top: 30px;
+	margin: 10px;
+	box-shadow: 7px 13px 37px #000;
+	padding: 5px;
+	cursor: pointer;
+}
+.carrito{
+ 	background-color: #0B4C63;
+ 	width: 50px;
+ 	height: 50px;
+	border: none;
+	box-shadow: 7px 13px 37px #000;
+	float: right;
+	cursor: pointer;
+
+}
+.carrito img{
+	width: 40px;
+	height: 40px;
+}
+
+summary{
+	margin-top: 7px; 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #24303c;
+}
+
+.topnav a {
+	margin-top: 2px;
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: 'calibri';
+}
+
+.topnav a:hover {
+	background-color: #0B4C63;
+	color: white;
+	display: block;
+}
+
+.topnav a.active {
+	padding: 0;
+	margin: 0;
+	background-color: #0B4C63;
+}
+
+.topnav .search-container {
+	float: right;
+}
+
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	border-radius: 4px;
+}
+  
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+  
+.topnav .search-container button:hover {
+	background: #ccc;
+}
+.zoom {
+
+	transition: transform .2s;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	transform: scale(1.5); 
+}
+footer{
+	position: relative;
+    bottom: 0px;
+    background-color: #24303c;
+    width: 100%;
+    color: white;
+    font-family: 'calibri';
+    font-size: 16px;
+    font-variant: small-caps;
+    text-align: center;
+	padding: 10px;
+	margin-top: 1400px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de productos</title>
+    <link rel="stylesheet" href="style/style_compra.css">
+    <script src="scripts/script_compra.js"></script>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="index.html"><img id="logo" src="img/logo.png" ></a>
+		<a href="Nuevos1.html">Videojuegos Nuevos</a></li>
+		<a href="Usados1.html">Videojuegos Usados</a></li>
+		<a href="Consolas.html">Consolas</a>
+		<a href="Accesorios.html">Accesorios</a>
+		<a href="Registro.html">Registrate</a>
+		<a id="inicio-secion" href="Ingreso.html">Iniciar sesión</a>
+	</div>
+    <section>
+        <div id="form_compra">
+            <form action="#" name="form_compra" onsubmit="return validarCompra(), m();">
+                <label>¿Que deseas vender?</label>
+                <select class="cp" id="producto" required>
+                <option value="0">Seleccione</option>
+                <option value="Videojuego">Videojuego</option>
+                <option value="Consola">Consola</option>
+                <option value="Accesorio">Accesorio</option>
+                </select>
+                <label>Nombre de el producto</label>
+                <input class="cp" type="text" id="nombre_p" required>
+                <label>Tiempo de uso de el producto</label>
+                <input class="cp" type="text" id="uso" required>
+                <label>Estado de el producto</label>
+                <select class="cp" id="estado_p" required>
+                    <option value="0">Seleccione</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Reparar">Reparar</option>
+                </select>
+                <label>Precio de venta</label>
+                <input class="cp" type="text" id="precio" required>
+                <label>Sube imagenes de tu producto</label>
+                <input class="cp" type="file" name="imagenes" id="imagenes" onchange="crearImg();" multiple required>
+                <input type="submit" id="bt_compra" value="Enviar">
+            </form>
+        </div>
+        <div id="mostrar">
+            <center><input id="bt_ver" type="button" value="Ver Producto" id="ver" onclick="verCompra(), validarCompra();"></center>
+            <h1 id="tit"></h1>
+            <center><div id="mostrar_i"></div></center>
+            <p id="pre"></p>
+        </div>
+    </section>
+    <footer>
+        <p>Desarrollado por Camilo Mejia, Julian Giraldo, Javier Rodriguez <br>
+        Todos los derechos reservados &copy; <br>
+        <a href="https://www.uniempresarial.edu.co/">Uniempresarial</a></p>
+    </footer>
+</body>
+</html>

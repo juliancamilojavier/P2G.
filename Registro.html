@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="style/style_registro.css">
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="index.html"><img id="logo" src="img/logo.png" ></a>
+		<a href="Nuevos1.html">Videojuegos Nuevos</a></li>
+		<a href="Usados1.html">Videojuegos Usados</a></li>
+		<a href="Consolas.html">Consolas</a>
+		<a href="Accesorios.html">Accesorios</a>
+		<a href="Registro.html">Registrate</a>
+		<a id="inicio-secion" href="Ingreso.html">Iniciar sesión</a>
+	</div>
+    <section>
+        <form action="Ingreso.html" name="form_registro" id="form_registro">
+            <h3>Formulario de Registro</h3>
+            <input class="datos" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+            <input class="datos" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+            <select class="datos" name="tp_documento" id="tp_documento">
+                <option value="tipo de documento">Tipo de documento</option>
+                <option value="cedula">Cedula de Ciudadanía</option>
+                <option value="tarjeta de identidad">Tarjeta de Identidad</option>
+            </select>
+            <input class="datos" type="text" name="documento" id="documento" placeholder="Ingrese su Número de Documento" required>
+            <select class="datos" name="genero" id="genero">
+                <option value="genero">Género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            <input class="datos" type="text" name="telefono" id="telefono" placeholder="Ingrese su Teléfono" required>
+            <input class="datos" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su Ciudad" required>
+            <input class="datos" type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirección" required>
+            <input class="datos" type="text" name="usuario" id="usuario" placeholder="Ingrese su Nombre de Usuario" required>
+            <input class="datos" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+            <input class="datos" type="password" name="" id="password" placeholder="Ingrese su Contraseña" required>
+            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+            <input type="submit" id="boton" value="Registrar" onclick="return validarDatos();" >
+            <p><a href="Ingreso.html">Ya tengo una cuenta</a></p>
+            <script src="scripts/script_registro.js"></script>
+        </form>
+    </section>
+    <footer>
+        <p>Desarrollado por Camilo Mejia, Julian Giraldo, Javier Rodriguez <br>
+        Todos los derechos reservados &copy; <br>
+        <a href="https://www.uniempresarial.edu.co/">Uniempresarial</a></p>
+    </footer>
+</body>
+</html>

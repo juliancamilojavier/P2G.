@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuario</title>
+    <link rel="stylesheet" href="style/style_ingreso.css">
+    <script src="scripts/script_registro.js"></script>
+    <script src="scripts/script_ingreso.js"></script>
+</head>
+<body>
+    <div class="topnav">
+		<a class="active" href="index.html"><img id="logo" src="img/logo.png" ></a>
+		<a href="Nuevos1.html">Videojuegos Nuevos</a></li>
+		<a href="Usados1.html">Videojuegos Usados</a></li>
+		<a href="Consolas.html">Consolas</a>
+		<a href="Accesorios.html">Accesorios</a>
+		<a href="Registro.html">Registrate</a>
+		<a id="inicio-secion" href="Ingreso.html">Iniciar sesión</a>
+	</div>
+    <section>
+        <form action="index.html" name="form_ingreso" id="form_ingreso">
+            <h3>Ingreso de Usuario</h3>
+            <input class="datos" type="text" name="usuario" id="usuario" placeholder="Ingrese su Nombre de Usuario" required>
+            <input class="datos" type="password" name="" id="password" placeholder="Ingrese su Contraseña" required>
+            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+            <input type="submit" id="boton" value="Registrar" onclick="return validarIngreso();">
+            <p><a href="Registro.html">¿No tienes una cuenta? Registrate</a></p>
+            <p id="error"></p>
+        </form>
+    </section>
+    <footer>
+        <p>Desarrollado por Camilo Mejia, Julian Giraldo, Javier Rodriguez <br>
+        Todos los derechos reservados &copy; <br>
+        <a href="https://www.uniempresarial.edu.co/">Uniempresarial</a></p>
+    </footer>
+</body>
+</html>
